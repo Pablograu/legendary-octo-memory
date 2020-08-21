@@ -21,15 +21,15 @@ obj.f = function () {
   b = parseInt(spaceship.style.top);
   for (i = 0; i < robots.length; i++) {
     if (
-      (parseInt(robots[i].style.left) + 10 > a &&
+      (parseInt(robots[i].style.left) + 5 > a &&
         a > parseInt(robots[i].style.left)) ||
-      (a + 10 > parseInt(robots[i].style.left) &&
+      (a + 5 > parseInt(robots[i].style.left) &&
         a < parseInt(robots[i].style.left)) ||
-      (a + 10 <= parseInt(robots[i].style.left) + 10 &&
+      (a + 5 <= parseInt(robots[i].style.left) + 5 &&
         a >= parseInt(robots[i].style.left))
     ) {
       if (
-        parseInt(robots[i].style.top) + 10 > b &&
+        parseInt(robots[i].style.top) + 5 > b &&
         b + 10 > parseInt(robots[i].style.top)
       ) {
         obj.reset();
@@ -37,29 +37,30 @@ obj.f = function () {
       }
     }
   }
-  k = event.key.toLowerCase();
-  if (k == "s") {
+  k = event.key;
+
+  if (k == "ArrowDown") {
     if (100 <= d + 7) {
       obj.reset();
       return;
     }
     d += 2;
     spaceship.style.top = d + "vh";
-  } else if (k == "w") {
+  } else if (k == "ArrowUp") {
     if (d <= 8) {
       obj.reset();
       return;
     }
     d -= 2;
     spaceship.style.top = d + "vh";
-  } else if (k == "d") {
+  } else if (k == "ArrowRight") {
     if (100 <= l + 6) {
       obj.reset();
       return;
     }
     l += 2;
     spaceship.style.left = l + "vw";
-  } else if (k == "a") {
+  } else if (k == "ArrowLeft") {
     if (l <= 0) {
       obj.reset();
       return;
@@ -108,4 +109,4 @@ for (i = 0; i < robots.length; i++) {
 
 spaceship = document.querySelector("#player"); //main spaceship
 
-window.addEventListener("keypress", obj.f, false); //keypress event handler
+window.addEventListener("keydown", obj.f, false); //keypress event handler
