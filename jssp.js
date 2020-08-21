@@ -21,16 +21,16 @@ obj.f = function () {
   b = parseInt(spaceship.style.top);
   for (i = 0; i < robots.length; i++) {
     if (
-      (parseInt(robots[i].style.left) + 5 > a &&
+      (parseInt(robots[i].style.left) + 10 > a &&
         a > parseInt(robots[i].style.left)) ||
-      (a + 5 > parseInt(robots[i].style.left) &&
+      (a + 10 > parseInt(robots[i].style.left) &&
         a < parseInt(robots[i].style.left)) ||
-      (a + 5 <= parseInt(robots[i].style.left) + 5 &&
+      (a + 10 <= parseInt(robots[i].style.left) + 10 &&
         a >= parseInt(robots[i].style.left))
     ) {
       if (
-        parseInt(robots[i].style.top) + 5 > b &&
-        b + 5 > parseInt(robots[i].style.top)
+        parseInt(robots[i].style.top) + 10 > b &&
+        b + 10 > parseInt(robots[i].style.top)
       ) {
         obj.reset();
         return;
