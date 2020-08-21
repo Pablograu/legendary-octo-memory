@@ -74,7 +74,7 @@ obj.f = function () {
     const surprise = document.createElement("div");
     const h1 = document.createElement("h1");
     html.appendChild(surprise);
-    h1.textContent = "IKEA SUCKS";
+    h1.textContent = "Servus!";
     h1.classList.add("secret-message");
     surprise.classList.add("surprise");
     surprise.appendChild(h1);
