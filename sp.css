@@ -53,3 +53,18 @@ body {
   background-image: url(./ikea-store.png);
   background-size: cover;
 }
+
+.surprise {
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secret-message {
+  color: #e20015;
+  font-size: 150px;
+}

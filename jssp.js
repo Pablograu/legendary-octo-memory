@@ -67,6 +67,18 @@ obj.f = function () {
     }
     l -= 2;
     spaceship.style.left = l + "vw";
+  } else if (k == " ") {
+    document.querySelector("body").remove();
+
+    const html = document.querySelector("html");
+    const surprise = document.createElement("div");
+    const h1 = document.createElement("h1");
+    html.appendChild(surprise);
+    h1.textContent = "IKEA SUCKS";
+    h1.classList.add("secret-message");
+    surprise.classList.add("surprise");
+    surprise.appendChild(h1);
+    console.log("hjhjhjhj", surprise);
   }
   a = parseInt(spaceship.style.left);
   b = parseInt(spaceship.style.top);
