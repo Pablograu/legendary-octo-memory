@@ -1,53 +1,55 @@
-body
-{
-background-image: url('bp.png');
-margin: 0px;
+body {
+  background-image: url("bg1.jpg");
+  background-size: cover;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
 }
 
-.info
-{
-    height: 8vh;
+.info {
+  height: 8vh;
+  background-color: grey;
 }
 
-.info>p
-{
-    position: absolute;
-    margin: 0px;
-    top: -0.5%;
-    color: red;
-    font-size:3.8vw;
-    font-family: Fantasy;
-
+.info > p {
+  position: absolute;
+  margin: 0px;
+  top: -0.5%;
+  color: #e20015;
+  font-size: 3.8vw;
+  font-weight: 700;
 }
 
-.info>p>span
-{
-    color: LightGreen;
+.header {
+  background-image: url(./header.png);
+  background-size: cover;
 }
 
-.game-window
-{
-    border: 10px Solid Red;
-    height: 89vh
+.info > p > span {
+  color: white;
 }
 
-#player
-{
-    position: absolute;
-    top: 60vh;
-    left: 50vw;
-    height: 37px;
-    width: 5vw;
+.game-window {
+  border: 30px Solid #e20015;
+  height: 89vh;
 }
 
-.robo>div
-{
-    position: absolute;
-    background-color: Yellow;
-    height: 37px;
-    width: 5vw;
-    top: 9vh;
-    border: 2px Solid Red;
-    margin: 0px;
-    z-index: -1;
+#player {
+  position: absolute;
+  top: 60vh;
+  left: 50vw;
+  width: 5vw;
+}
+
+.robo > div {
+  position: absolute;
+  height: 53px;
+  width: 5vw;
+  top: 12vh;
+  margin: 0px;
+  z-index: -1;
+}
+
+.enemy {
+  background-image: url(./ikea-store.png);
+  background-size: cover;
 }
