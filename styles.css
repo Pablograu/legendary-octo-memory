@@ -1,0 +1,70 @@
+body {
+  background-image: url("bg.png");
+  background-size: cover;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.info {
+  height: 8vh;
+  background-color: grey;
+}
+
+.info > p {
+  position: absolute;
+  margin: 0px;
+  top: -0.5%;
+  color: #e20015;
+  font-size: 3.8vw;
+  font-weight: 700;
+}
+
+.header {
+  background-image: url(./header.png);
+  background-size: cover;
+}
+
+.info > p > span {
+  color: white;
+}
+
+.game-window {
+  border: 30px Solid #e20015;
+  height: 89vh;
+}
+
+#player {
+  position: absolute;
+  top: 60vh;
+  left: 50vw;
+  width: 5vw;
+}
+
+.robo > div {
+  position: absolute;
+  height: 53px;
+  width: 5vw;
+  top: 12vh;
+  margin: 0px;
+  z-index: -1;
+}
+
+.enemy {
+  background-image: url(./ikea-store.png);
+  background-size: cover;
+}
+
+.surprise {
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secret-message {
+  color: #e20015;
+  font-size: 150px;
+}
